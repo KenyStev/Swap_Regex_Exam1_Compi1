@@ -30,11 +30,12 @@ Token* Lexer::getNextToken()
             returnToken = new Token(string((inputString.c_str())[this->currentChar],1),LITERAL_NUMBER);
         }else if((inputString.c_str())[this->currentChar]=='(')
         {
-            cout<<"PAr OPen"<<endl;
+            cout<<"Paren Open"<<endl;
             returnToken = new Token("*",PUNT_OPEN_PAREN);
         }
         else if((inputString.c_str())[this->currentChar]==')')
         {
+            cout<<"Paren Close"<<endl;
             returnToken = new Token("*",PUNT_CLOSE_PAREN);
         }
         else if((inputString.c_str())[this->currentChar]=='*')
@@ -44,11 +45,13 @@ Token* Lexer::getNextToken()
         }
         else if((inputString.c_str())[this->currentChar]=='.')
         {
-            returnToken = new Token("*",PUNT_CLOSE_PAREN);
+            cout<<"DOT"<<endl;
+            returnToken = new Token("*",OP_DOT);
         }
         else if((inputString.c_str())[this->currentChar]=='+')
         {
-            returnToken = new Token("*",PUNT_CLOSE_PAREN);
+            cout<<"PIPE"<<endl;
+            returnToken = new Token("*",OP_PIPE);
         }
         else{
             cout<<"Symbol not suported!"<<endl;

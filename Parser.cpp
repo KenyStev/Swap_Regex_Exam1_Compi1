@@ -1,8 +1,13 @@
 #include "Parser.h"
 
-Parser::Parser()
+Parser::Parser(Lexer * l)
 {
-    //ctor
+    this->lexer=l;
+}
+
+string Parser::parse()
+{
+    this->Codigo();
 }
 
 Parser::~Parser()

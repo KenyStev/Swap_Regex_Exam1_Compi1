@@ -1,11 +1,14 @@
 #ifndef PARSER_H
 #define PARSER_H
 
+#include "Lexer.h"
 
 class Parser
 {
     public:
-        Parser();
+        Lexer *lexer;
+        Parser(Lexer*);
+        string parse();
         virtual ~Parser();
     protected:
     private:
