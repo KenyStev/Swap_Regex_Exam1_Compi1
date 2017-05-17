@@ -22,21 +22,23 @@ Token* Lexer::getNextToken()
             || ((inputString.c_str())[this->currentChar]>='A' && (inputString.c_str())[this->currentChar]<='Z'))
         {
             cout<<"Literal char"<<endl;
-            returnToken = new Token(string((inputString.c_str())[this->currentChar],1),LITERAL_CHAR);
+            string val((inputString.c_str())[this->currentChar],1);
+            returnToken = new Token(val,LITERAL_CHAR);
         }
         else if(((inputString.c_str())[this->currentChar]>='0' && (inputString.c_str())[this->currentChar]<='9'))
         {
             cout<<"Literal number"<<endl;
-            returnToken = new Token(string((inputString.c_str())[this->currentChar],1),LITERAL_NUMBER);
+            string val((inputString.c_str())[this->currentChar],1);
+            returnToken = new Token(val,LITERAL_NUMBER);
         }else if((inputString.c_str())[this->currentChar]=='(')
         {
             cout<<"Paren Open"<<endl;
-            returnToken = new Token("*",PUNT_OPEN_PAREN);
+            returnToken = new Token("(",PUNT_OPEN_PAREN);
         }
         else if((inputString.c_str())[this->currentChar]==')')
         {
             cout<<"Paren Close"<<endl;
-            returnToken = new Token("*",PUNT_CLOSE_PAREN);
+            returnToken = new Token(")",PUNT_CLOSE_PAREN);
         }
         else if((inputString.c_str())[this->currentChar]=='*')
         {
@@ -46,7 +48,7 @@ Token* Lexer::getNextToken()
         else if((inputString.c_str())[this->currentChar]=='.')
         {
             cout<<"DOT"<<endl;
-            returnToken = new Token("*",OP_DOT);
+            returnToken = new Token(".",OP_DOT);
         }
         else if((inputString.c_str())[this->currentChar]=='+')
         {

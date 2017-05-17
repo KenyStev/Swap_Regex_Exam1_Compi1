@@ -1,13 +1,16 @@
 #include <iostream>
-#include "Lexer.h"
+#include "Parser.h"
 
 using namespace std;
 
 int main()
 {
-    Lexer l(" ( 0 + 1 ) . 1 *");
-    Token *t = l.getNextToken();
-    while(t->type!=STMT_EOF)
-        t = l.getNextToken();
+    Lexer *l = new Lexer(" ( 0 + 1 ) . 1 *");
+//    Token *t = l.getNextToken();
+//    while(t->type!=STMT_EOF)
+//        t = l.getNextToken();
+
+    Parser *regexs = new Parser(l);
+    cout<<regexs->parse()<<endl;
     return 0;
 }

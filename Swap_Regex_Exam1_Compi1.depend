@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1494985805 source:/run/media/kenystev/Datos/Backup/Unitec/2017/II Modulo/Compiladores_1/Swap_Regex_Exam1_Compi1/Lexer.cpp
+1494991736 source:/run/media/kenystev/Datos/Backup/Unitec/2017/II Modulo/Compiladores_1/Swap_Regex_Exam1_Compi1/Lexer.cpp
 	"Lexer.h"
 
 1494984738 /run/media/kenystev/Datos/Backup/Unitec/2017/II Modulo/Compiladores_1/Swap_Regex_Exam1_Compi1/Lexer.h
@@ -7,7 +7,7 @@
 	<string>
 	"Token.h"
 
-1494984273 /run/media/kenystev/Datos/Backup/Unitec/2017/II Modulo/Compiladores_1/Swap_Regex_Exam1_Compi1/Token.h
+1494991688 /run/media/kenystev/Datos/Backup/Unitec/2017/II Modulo/Compiladores_1/Swap_Regex_Exam1_Compi1/Token.h
 	<iostream>
 	<stdio.h>
 	<string>
@@ -15,15 +15,18 @@
 
 1494985488 /run/media/kenystev/Datos/Backup/Unitec/2017/II Modulo/Compiladores_1/Swap_Regex_Exam1_Compi1/TokenType.h
 
-1494985881 source:/run/media/kenystev/Datos/Backup/Unitec/2017/II Modulo/Compiladores_1/Swap_Regex_Exam1_Compi1/main.cpp
+1494990924 source:/run/media/kenystev/Datos/Backup/Unitec/2017/II Modulo/Compiladores_1/Swap_Regex_Exam1_Compi1/main.cpp
 	<iostream>
-	"Lexer.h"
-
-1494982020 source:/run/media/kenystev/Datos/Backup/Unitec/2017/II Modulo/Compiladores_1/Swap_Regex_Exam1_Compi1/Parser.cpp
 	"Parser.h"
 
-1494982020 /run/media/kenystev/Datos/Backup/Unitec/2017/II Modulo/Compiladores_1/Swap_Regex_Exam1_Compi1/Parser.h
+1494991673 source:/run/media/kenystev/Datos/Backup/Unitec/2017/II Modulo/Compiladores_1/Swap_Regex_Exam1_Compi1/Parser.cpp
+	"Parser.h"
 
-1494982529 source:/run/media/kenystev/Datos/Backup/Unitec/2017/II Modulo/Compiladores_1/Swap_Regex_Exam1_Compi1/Token.cpp
+1494991697 /run/media/kenystev/Datos/Backup/Unitec/2017/II Modulo/Compiladores_1/Swap_Regex_Exam1_Compi1/Parser.h
+	<iostream>
+	<string>
+	"Lexer.h"
+
+1494991041 source:/run/media/kenystev/Datos/Backup/Unitec/2017/II Modulo/Compiladores_1/Swap_Regex_Exam1_Compi1/Token.cpp
 	"Token.h"
 
