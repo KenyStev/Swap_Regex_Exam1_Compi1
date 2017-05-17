@@ -21,13 +21,7 @@ string Parser::parse()
 string Parser::E()
 {
     cout<<"E"<<endl;
-//    if(this->currentToken->type==PUNT_OPEN_PAREN
-//    || this->currentToken->type==LITERAL_CHAR
-//    || this->currentToken->type==LITERAL_NUMBER)
-//    {
-//        string tValue = this->T();
-        string reversed = this->E_Prime(this->T());
-//    }
+    string reversed = this->E_Prime(this->T());
     return reversed;
 }
 
@@ -72,6 +66,9 @@ string Parser::F()
         cout<<"LEXEME"<<endl;
         currentToken = lexer->getNextToken();
         return F_Prime(lex);
+    }else{
+        cout<<"( or Litera expected."<<endl;
+        exit(-1);
     }
 }
 

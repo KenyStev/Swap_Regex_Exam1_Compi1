@@ -4,7 +4,7 @@ Token::Token(string lex, TokenType t)
 {
     this->lexeme = lex;
     this->type = t;
-//    cout<<"lxe:   -> "<<lexeme<<end;
+    cout<<"lxe:   -> "<<this->lexeme<<endl;
 }
 
 Token::~Token()

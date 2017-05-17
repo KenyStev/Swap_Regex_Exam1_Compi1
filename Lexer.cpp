@@ -22,14 +22,14 @@ Token* Lexer::getNextToken()
             || ((inputString.c_str())[this->currentChar]>='A' && (inputString.c_str())[this->currentChar]<='Z'))
         {
             cout<<"Literal char"<<endl;
-            string val((inputString.c_str())[this->currentChar],1);
-            returnToken = new Token(val,LITERAL_CHAR);
+            string lex = inputString.substr(currentChar,1);
+            returnToken = new Token(lex,LITERAL_CHAR);
         }
         else if(((inputString.c_str())[this->currentChar]>='0' && (inputString.c_str())[this->currentChar]<='9'))
         {
             cout<<"Literal number"<<endl;
-            string val((inputString.c_str())[this->currentChar],1);
-            returnToken = new Token(val,LITERAL_NUMBER);
+            string lex = inputString.substr(currentChar,1);
+            returnToken = new Token(lex,LITERAL_NUMBER);
         }else if((inputString.c_str())[this->currentChar]=='(')
         {
             cout<<"Paren Open"<<endl;
